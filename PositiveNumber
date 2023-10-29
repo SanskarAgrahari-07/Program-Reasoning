@@ -1,0 +1,20 @@
+#include<stdio.h>
+#include<limits.h>
+/*@
+	requires INT_MIN < num < INT_MAX;
+	ensures (\result == 1) || (\result == 0);
+	ensures (num >= 0 ==> \result ==1 )&& (num < 0 ==> \result == 0);	
+*/
+int positive(int num)
+{
+	if(num >= 0)
+	return 1;
+	else
+	return 0;
+}
+int main()
+{
+	int n;
+	positive(-9);
+	return 0;
+}
