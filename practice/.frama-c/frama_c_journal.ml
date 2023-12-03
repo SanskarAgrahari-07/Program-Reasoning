@@ -1,4 +1,4 @@
-(* Frama-C journal generated at 23:22 the 01/12/2023 *)
+(* Frama-C journal generated at 10:27 the 31/10/2023 *)
 
 exception Unreachable
 exception Exception of string
